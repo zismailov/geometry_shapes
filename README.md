@@ -26,11 +26,11 @@ geometry_shapes/
 from shapes.circle import Circle
 from shapes.triangle import Triangle
 
-Create a Circle object
+#create a Circle object
 circle = Circle(5)
 print(circle.area())  # Output: 78.54
 
-Create a Triangle object
+#create a Triangle object
 triangle = Triangle(3, 4, 5)
 print(triangle.area())  # Output: 6.0
 ```
