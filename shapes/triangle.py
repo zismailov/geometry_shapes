@@ -7,6 +7,17 @@ class Triangle(Shape):
         self.b = b
         self.c = c
 
+        if not self._is_valid_triangle():
+            raise ValueError("Стороны не образуют треугольник")
+
+    def _is_valid_triangle(self):
+        # Проверка существования треугольника
+        return (
+            self.a + self.b > self.c and
+            self.a + self.c > self.b and
+            self.b + self.c > self.a
+        )
+    
     def area(self):
         # Вычисление площади треугольника по формуле Герона
         s = (self.a + self.b + self.c) / 2

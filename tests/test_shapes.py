@@ -34,6 +34,14 @@ def test_calculate_area():
     assert calculate_area(circle) == pytest.approx(28.274333882308138, rel=1e-5)
     assert calculate_area(triangle) == 6.0
 
+# Тест для проверки, является ли треугольник прямоугольным
+def test_triangle_is_right():
+    t = Triangle(3, 4, 5)
+    assert t.is_right_triangle() is True
+
+    t2 = Triangle(5, 5, 5)
+    assert t2.is_right_triangle() is False
+
 # Функция для вычисления площади фигуры без знания ее типа
 def calculate_area(shape):
     return shape.area()

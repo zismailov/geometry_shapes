@@ -26,13 +26,14 @@ geometry_shapes/
 from shapes.circle import Circle
 from shapes.triangle import Triangle
 
-#create a Circle object
+# Создание объекта Circle
 circle = Circle(5)
-print(circle.area())  # Output: 78.54
+print(circle.area())  # Вывод: 78.54
 
-#create a Triangle object
+# Создание объекта Triangle
 triangle = Triangle(3, 4, 5)
-print(triangle.area())  # Output: 6.0
+print(triangle.area())               # Вывод: 6.0
+print(triangle.is_right_triangle())  # Вывод: True
 ```
 
 ## Как запустить тесты:
